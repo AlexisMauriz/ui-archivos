@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.upload-container {
+  margin: 100px auto;
+  width: 500px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+.upload-container > .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.upload-container .drag-drop {
+  border: dashed 3px #ccc;
+  border-radius: 5px;
+  box-sizing: inherit;
+  padding: 60px 30px;
+  margin: 20px 0;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #999;
+  gap: 10px;
+}
+
+.upload-container .drag-drop .icon svg {
+  width: 200px;
+  height: 200px;
+  fill: rgba(77, 134, 240, 0.5);
+}
+
+.upload-container .drag-drop .btn {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4d86f0;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  min-width: 200px;
+  cursor: pointer;
+}
+.upload-container .drag-drop .btn:hover {
+  background-color: #04f771;
+}
+
+.upload-container .title-section {
+  text-align: left;
+  color: #555;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+.upload-container .uploaded-files {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.upload-container .uploaded-files .file {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadows 0.3s ease;
+}
+.upload-container .uploaded-files .file:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.upload-container .uploaded-files .file .icon {
+  width: 48px;
+}
+
+.upload-container .uploaded-files .file .icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.upload-container .uploaded-files .file .title {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.upload-container .uploaded-files .file .title .name {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.upload-container .uploaded-files .file .actions button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-container .uploaded-files .file .actions button svg {
+  width: 45px;
+  height: 45pz;
+  fill: #555;
+}
+
+.upload-container .uploaded-files .file .actions button:hover {
+  background-color: #ff0000;
+}
